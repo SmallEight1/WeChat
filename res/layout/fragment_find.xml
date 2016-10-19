@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/backgound" >
+    <TextView
+        android:id="@+id/friends_id" style="@style/textView"
+        android:text="朋友圈" android:drawableLeft="@drawable/v2"/>
+
+    <TextView
+        android:id="@+id/richScan_id" style="@style/textView"
+        android:text="扫一扫" android:drawableLeft="@drawable/icon_de_saoyisao" />
+    <TextView
+        android:id="@+id/shake_id" style="@style/textView"
+        android:text="摇一摇" android:drawableLeft="@drawable/icon_de_yao"
+        android:layout_marginTop="1dp"/>
+
+    <TextView
+        android:id="@+id/look_around_id" style="@style/textView"
+        android:text="附近的人" android:drawableLeft="@drawable/icon_de_nearby"/>
+    
+    <TextView
+        android:id="@+id/bottle_id" style="@style/textView"
+        android:text="漂流瓶" android:drawableLeft="@drawable/icon_de_ping"
+        android:layout_marginTop="1dp"/>
+
+    <TextView
+        android:id="@+id/shoping_id" style="@style/textView"
+        android:text="购物" android:drawableLeft="@drawable/icon_de_shop"/>
+
+
+    <TextView
+        android:id="@+id/game_id"  style="@style/textView"
+        android:text="游戏" android:drawableLeft="@drawable/icon_de_game"
+        android:layout_marginTop="1dp"/>
+</LinearLayout>

@@ -1,0 +1,157 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"> </style>
+
+    <style name="AppTheme" parent="AppBaseTheme"> </style>
+
+    <!-- 标题的样式   长占满父布局，高固定高度-->
+    <style  name = "title_style"> 
+        <item name = "android:layout_width">match_parent</item>  <item name = "android:layout_height">@dimen/title_hegiht</item>
+    </style>
+    
+    <!-- 主界面底层按钮组  高度为包裹内容，宽度用权重平分，没有点击效果(but @ null),内容水平居中，字体颜色（选中效果）,背景颜色（白）-->
+    <style name = "radiobutton">
+        <item name ="android:layout_width">0dp</item>  <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:layout_weight">1</item>  <item name ="android:button">@null</item>
+        <item name ="android:gravity">center_horizontal</item>   <item name ="android:color">@color/sel_radion_text</item>
+        <item name ="android:background">@color/white</item>   <item name ="android:textSize">12sp</item>	
+    </style> 
+     
+    <!-- 发现，我的，微信，线性布局的样式 -->
+    <style name="LinearLayout">
+         <item name ="android:layout_height">wrap_content</item>  <item name ="android:layout_width">match_parent</item>
+         <item name ="android:background">@color/white</item> <item name ="android:layout_marginTop">@dimen/spanbew</item>  
+    </style>
+
+    <!-- 通讯录中联系布局的样式 ,图片的样式，文字的样式-->
+    <style name="con_LinearLayout">
+        <item name="android:layout_marginTop">@dimen/line_heghit</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/pre_style</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:layout_width">match_parent</item>
+    </style>
+    <style name="con_Linear_Img">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    
+    <style name = "con_Linear_text">
+        <item name="android:layout_gravity">center_vertical</item>
+       	<item name ="android:layout_height">wrap_content</item> 
+       	<item name ="android:layout_width">wrap_content</item>   
+    	<item name ="android:background">@drawable/pre_style</item> 
+    	<item name ="android:textSize">@dimen/con_Text_size</item>
+        <item name ="android:textColor">@color/text_gray</item>
+        
+    </style>
+    <!-- 圆形图片的样式 ：固定长宽，默认引用，和边框的距离(pad)-->
+    <style name="CriImageView">
+         <item name ="android:layout_height">@dimen/img_size</item> <item name ="android:layout_width">@dimen/img_size</item>
+         <item name ="android:src">@drawable/ic_launcher</item>  <item name ="android:layout_marginRight">8dp</item>   
+         <item name ="android:layout_marginTop">8dp</item>    <item name ="android:layout_marginBottom">8dp</item>   
+         <item name ="android:layout_marginLeft">8dp</item>   
+    </style>
+
+    <!-- 我的界面 ，第一个线性布局字体的样式：颜色，大小，不可被点击，宽度包裹，高度均分 -->
+    <style name = "Me_LinearText">
+        <item name ="android:textColor">@color/black</item>  <item name ="android:text">Small_eight</item>
+        <item name ="android:textSize">@dimen/lin_Text_size</item>  <item name ="android:clickable">false</item>
+        <item name ="android:layout_width">wrap_content</item>  <item name ="android:layout_height">0dp</item>
+        <item name ="android:layout_weight">1</item>
+    </style>
+    
+    <!-- （主界面所有碎片）字体的样式 :高度包裹内容，宽度沾满父布局，距离边框距离（pad）,颜色，点击效果（可被点击），字体大小，字体颜色，和距离顶部的距离-->
+    <style name="textView">
+         <item name ="android:layout_height">wrap_content</item> <item name ="android:layout_width">match_parent</item>
+    	 <item name ="android:paddingTop">@dimen/text_padding</item>  <item name ="android:paddingBottom">@dimen/text_padding</item>   
+    	 <item name ="android:paddingLeft">@dimen/text_padding</item>  <item name ="android:paddingRight">@dimen/text_padding</item>  
+         <item name ="android:drawableRight">@drawable/right</item>  <item name ="android:drawablePadding">@dimen/text_draw_pad</item>   
+         <item name ="android:background">@drawable/pre_style</item>  <item name ="android:textSize">@dimen/text_size</item>
+         <item name ="android:textColor">@color/black</item> <item name ="android:layout_marginTop">@dimen/spanbew</item>
+         <item name ="android:clickable">true</item>
+    </style>
+ 
+    <!-- 朋友圈的图片的样式 ，长固定，框固定，默认引用，默认不显示，距离左边距离(marg)，距离右边距离（marg）-->
+    <style name = "FriendsImageView">
+        <item name ="android:layout_width">@dimen/fre_img_width</item>  <item name ="android:layout_height">@dimen/fre_imag_height</item>
+        <item name ="android:src">@drawable/ic_launcher</item> <item name ="android:layout_marginRight">@dimen/fre_imag_padding</item>
+        <item name ="android:layout_marginBottom">@dimen/fre_imag_padding</item> <item name ="android:visibility">gone</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    
+    <!-- popuWindow的样式 -->
+    <style name ="WeiXin_popuWindow_text">
+        <item name ="android:layout_width">wrap_content</item>  <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:textColor">@color/white</item>  <item name ="android:textSize">@dimen/popuWindow_tex_size</item>  
+        <item name ="android:paddingTop">@dimen/popuWindow_padding</item> <item name ="android:paddingLeft">@dimen/popuWindow_padding</item>
+        <item name ="android:paddingBottom">@dimen/popuWindow_padding</item> <item name ="android:paddingRight">@dimen/popuWindow_pad_rig</item>
+        <item name ="android:drawablePadding">5dp</item> <item name ="android:gravity">center_vertical</item>
+    	<item name ="android:background">@drawable/pre_popu</item>
+    </style>
+
+    <!-- 搜索框的样式 -->
+    <style name = "searchView">
+        <item name="android:background">@drawable/search_ba</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:hint">搜索</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableLeft">@drawable/search_icon</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:drawablePadding">10dp</item>    
+        <item name="android:drawableRight">@drawable/pre_sea_close</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name ="android:textSize">@dimen/con_Text_size</item>
+    </style>
+    
+    <!-- 微信界面工具的样式 -->
+    <style  name ="tool_ly">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style  name ="tool_ly_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style  name ="tool_ly_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    
+    <!-- 时间样式 -->
+    <style name ="time_tv">
+         <item name = "android:layout_width">wrap_content</item>
+         <item name = "android:layout_height">wrap_content</item>
+         <item name = "android:layout_centerHorizontal">true</item>
+         <item name = "android:background">@drawable/shap_time_back</item>
+         <item name = "android:text">25:45</item>
+         <item name = "android:textColor">@color/white</item>
+         <item name = "android:layout_marginTop">20dp</item>
+         <item name = "android:padding">3dp</item>
+         <item name = "android:layout_marginBottom">20dp</item>
+         <item name = "android:textSize">11sp</item>
+     </style> 
+     <!--  -->
+     <style name ="edit_log_reg">
+         <item name="android:layout_width">match_parent</item>
+         <item name ="android:layout_height">wrap_content</item>
+         <item name ="android:background">@drawable/fou_editview</item>
+         <item name ="android:layout_marginTop">20dp</item>
+         <item name ="android:paddingLeft">100dp</item>
+         <item name ="android:singleLine">true</item>
+         <item name="android:drawableRight">@drawable/pre_sea_close</item>
+     </style>
+</resources>
+

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/backgound">
+
+    <include android:id="@+id/title_la_id" style="@style/title_style"
+        layout="@layout/activity_title"  />
+    
+     <TextView  android:id="@+id/queding" android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_hegiht" android:text="确定"
+        android:textColor="@color/white" android:gravity="center_vertical"
+        android:layout_alignParentRight="true" android:background="@drawable/pre_back_img"
+        android:layout_marginRight="10dp" android:textSize="@dimen/con_Text_size"/>
+
+    <com.wuxianedu.wechat.widget.HorizontalListView android:id="@+id/group_chat_hlv"
+        android:layout_height="50dp" android:layout_width="50dp"
+        android:layout_below="@id/title_la_id"
+        android:background="@color/white" />  
+    <com.wuxianedu.wechat.widget.ClearEditText android:id="@+id/group_chat_search"
+        android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableRight="@drawable/pre_sea_close" android:layout_below="@id/title_la_id"
+        android:paddingRight="10dp" android:singleLine="true"
+        android:background="@color/white" android:hint="搜索"
+         android:layout_toRightOf="@id/group_chat_hlv"/>
+	<!-- 搜索图标 -->
+    <ImageView android:id="@+id/group_chat_search_bar" android:layout_width="40dp"
+        android:layout_height="40dp" android:src="@drawable/search_icon"
+        android:scaleType="centerInside" android:layout_below="@id/title_la_id"
+        android:layout_margin="5dp" android:background="@color/white"/>
+        
+    <ListView android:id="@+id/gounpChat_listView"  android:layout_width="match_parent" 
+         android:layout_height="match_parent" android:layout_below="@id/group_chat_search"
+         android:layout_marginTop="1dp" android:divider="@null"/>
+   
+   	<com.wuxianedu.wechat.widget.SideBar android:id="@+id/sideBar_id" android:layout_width="30dp"
+	    android:layout_height="match_parent" android:layout_alignTop="@id/gounpChat_listView"
+	    android:layout_alignParentRight="true" android:layout_marginBottom="10dp"/>
+	
+	<TextView android:id="@+id/char_id" android:layout_centerInParent="true"
+	    android:text="j" android:textSize="30sp" android:background="@drawable/shape_hint_char"
+	    android:textColor="@color/white" android:layout_width="70dp"
+	    android:layout_height="70dp" android:gravity="center"
+	    android:visibility="gone"/>
+
+</RelativeLayout>

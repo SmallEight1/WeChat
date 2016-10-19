@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" 
+    android:background="@color/white" >
+
+    <include android:id="@+id/title_la_id"  style="@style/title_style"
+         layout="@layout/activity_title" />
+
+	<ListView android:id="@+id/news_ls_id" android:layout_width="match_parent"
+	    android:layout_height="match_parent" android:layout_below="@id/title_la_id"
+	    android:scrollbars="none"/>
+	<!--scrollbars属性关闭  -->
+</RelativeLayout>

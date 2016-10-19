@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgound">
+
+  	<include android:id="@+id/title_la_id"  style="@style/title_style"
+         layout="@layout/activity_title" />
+
+	<com.wuxianedu.wechat.widget.RoundImageView android:id="@+id/head_id"
+	     android:layout_width="70dp" android:layout_height="70dp"
+	     android:layout_below="@id/title_la_id" android:src="@drawable/head_nor"
+	     android:scaleType="centerCrop" android:layout_margin="15dp"
+	     />
+	
+	<TextView android:id="@+id/name_id" android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" android:text="姓名"
+	    android:textSize="20sp" android:textColor="@color/black"
+	    android:layout_toRightOf="@id/head_id" android:layout_alignTop="@id/head_id"
+	    android:drawableRight="@drawable/ic_sex_female" android:drawablePadding="5dp"/>
+	
+	<TextView android:id="@+id/num_id" android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" android:text="微信号:" android:layout_below="@id/name_id"
+	    android:textSize="@dimen/text_size" android:layout_alignLeft="@id/name_id"
+	    android:layout_marginTop="10dp"/>
+	
+	<TextView android:id="@+id/weChatnum_id" android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" android:text="微信号: " android:layout_below="@id/name_id"
+	    android:textSize="@dimen/text_size" android:layout_toRightOf="@id/num_id"
+	    android:layout_marginTop="10dp" android:layout_marginLeft="5dp"/>
+	
+	<TextView  android:id="@+id/address" android:layout_height="wrap_content"
+	    android:layout_width="match_parent" android:background="@drawable/pre_style"
+	    android:text="地区" android:layout_below="@id/head_id" android:padding="@dimen/text_padding"
+	    android:textSize="@dimen/text_size" android:clickable="true" />
+	
+	<TextView  android:id="@+id/address_id" android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"  android:layout_alignLeft="@id/name_id"
+	    android:text="唐" android:layout_below="@id/head_id"  android:layout_alignTop="@id/address"
+	    android:layout_alignBottom="@id/address" android:textSize="@dimen/text_size"
+	    android:gravity="center_vertical"/>
+	
+	<View  android:id="@+id/line_id" android:layout_width="10dp" 
+	    android:layout_height="@dimen/line_heghit" android:layout_below="@id/address"
+	  	android:layout_alignParentRight="true" android:background="@color/white"/>
+	
+	<View  android:id="@+id/line2_id" android:layout_width="10dp" 
+	    android:layout_height="@dimen/line_heghit" android:layout_below="@id/address"
+	    android:layout_alignParentLeft="true"  android:background="@color/white"/>
+	
+	<TextView  
+	    android:id="@+id/signature" android:layout_height="wrap_content"
+	    android:layout_width="match_parent" android:background="@drawable/pre_style"
+	    android:text="个人签名"  android:padding="@dimen/text_padding"
+	    android:textSize="@dimen/text_size" android:layout_below="@id/line_id"
+	    android:clickable="true"/>
+	
+	<TextView  android:id="@+id/signature_id" android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"  android:layout_alignLeft="@id/name_id"
+	    android:text="唐" android:layout_below="@id/head_id"  android:layout_alignTop="@id/signature"
+	    android:layout_alignBottom="@id/signature" android:textSize="@dimen/text_size"
+	    android:gravity="center_vertical"/>
+	
+	<View  android:id="@+id/line1_id" android:layout_width="10dp" 
+	    android:layout_height="@dimen/line_heghit" android:layout_below="@id/signature"
+	    android:layout_alignParentRight="true" android:background="@color/white"/>
+	<View  android:id="@+id/line3_id" android:layout_width="10dp" 
+	    android:layout_height="@dimen/line_heghit" android:layout_below="@id/signature"
+	    android:layout_alignParentLeft="true"  android:background="@color/white"/>
+	
+	<TextView  
+	    android:id="@+id/photo" android:layout_height="wrap_content"
+	    android:layout_width="match_parent" android:background="@drawable/pre_style"
+	    android:text="个人相册"  android:paddingLeft="@dimen/text_padding"
+	    android:paddingTop="30dp" android:paddingBottom="30dp"
+	    android:textSize="@dimen/text_size" android:layout_below="@id/line1_id"
+	    android:drawableRight="@drawable/right"  android:clickable="true"
+	    android:paddingRight="10dp"/>
+	
+	<ImageView  android:id="@+id/photo1_id" android:layout_height="58dp"
+	    android:layout_width="58dp"  android:layout_alignLeft="@id/name_id"
+	    android:layout_below="@id/head_id"  android:layout_alignTop="@id/photo"
+	    android:layout_alignBottom="@id/photo"  android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp" android:src="@drawable/ic_launcher"
+	    android:gravity="center_vertical"/>
+	
+	<ImageView  android:id="@+id/photo2_id" android:layout_height="58dp"
+	    android:layout_width="58dp" 
+	    android:layout_below="@id/head_id"  android:layout_alignTop="@id/photo"
+	    android:layout_alignBottom="@id/photo"  android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp" android:src="@drawable/ic_launcher"
+	    android:gravity="center_vertical" android:layout_toRightOf="@id/photo1_id"
+	    android:layout_marginLeft="15dp"/>
+	
+	<ImageView  android:id="@+id/photo3_id" android:layout_height="58dp"
+	    android:layout_width="58dp" 
+	    android:layout_below="@id/head_id"  android:layout_alignTop="@id/photo"
+	    android:layout_alignBottom="@id/photo"  android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp" android:src="@drawable/ic_launcher"
+	    android:gravity="center_vertical" android:layout_toRightOf="@id/photo2_id"
+	    android:layout_marginLeft="15dp"/>
+	
+	<Button android:id="@+id/setMessage_id" android:layout_width="match_parent"
+	    android:layout_height="wrap_content" android:text="发送消息" 
+	    android:textColor="@color/white" android:layout_below="@id/photo"
+	    android:background="@drawable/pre_login_but" android:layout_marginTop="20dp"
+	    android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+	
+</RelativeLayout>

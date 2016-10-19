@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 背景色，欢迎界面的额外背景 -->
+  	<color name="black_backgound">#000201</color>
+  	
+    <!-- 标题和标题内的组件被点击的颜色 -->
+    <color name="black_title">#2B2B2B</color>
+    <color name="black_title_pres">#202020</color>
+    
+    <!-- 线的颜色（登陆界面） -->
+    <color name="line">#CACACA</color>
+    
+    <!-- 背景色 （用于全部的碎片）-->
+    <color name="backgound">#E9E9E9</color>
+    
+	<!-- 绿色 和绿色被点击（登陆按钮） -->
+    <color name="green">#3EBA3E</color>
+    <color name="green_pre">#36A436</color>
+    
+    <!-- 黑色（字体） 灰色（字体） -->
+    <color name="black">#000000</color>
+    <color name="text_gray">#757575</color>
+    
+    <!-- 白色 和白色 被点击的颜色（所有的线性布局） -->
+    <color name ="white">#ffffff</color>
+    <color name="white_pre">#E6DDDD</color>
+    
+    <!-- 蓝色（朋友圈内的蓝色字体） -->
+    <color name="blue">#34679A</color>
+    <color name="text_blue">#4CC4F7</color>
+    
+	<!-- 灰色（白色按钮的点击，pre之后的颜色） -->
+    <color name="gray"> #E1E6F6</color>
+    
+ 	<!-- 红色和红色被点击的颜色（注册按钮） -->
+    <color name="red"> #FC5050</color>
+    <color name="red_pre"> #EF4C4C</color>
+   
+	<!-- popu的点击 -->
+   <color name="pop_nor"> #232325</color>
+   <color name="pop_pre"> #131314</color>
+   <color name="pop_line"> #1F1F20</color>
+   <color name="black_90">#90000000</color>
+   
+ 	<!-- 订阅号详情中 时间背景灰色 -->
+    <color name="time_back_gray">#BDBDBD</color>
+    <!-- 按下说话边框的灰色 -->
+    <color name="talk_biankuang_grey">#ACACAC</color>
+    <!-- 象牙黑 -->
+    <color name ="ivory_black">#292421</color>
+    <color name ="grey">#c0c0c0</color>
+    <color name ="cool_grey">#808a87</color>
+    <color name ="slate_grey">#708069</color>
+    <color name ="warm_grey">#708069</color>
+    
+    <!-- 古典白 -->
+    <color name ="antique_white">#FAEBD7</color>
+    <color name="shy_blue">#f0ffff</color>
+    <color name="smoke_white">#f5f5f5</color>
+    <!-- 杏仁白 -->
+    <color name="apricot_white">#ffffcd</color>
+    <color name="cornsilk">#fff8dc</color>
+    <color name="eggshell">#fce6c9</color>
+    
+    <color name="yellow">#ffff00</color>
+    <color name="banana_yellow">#e3cf57</color>
+    <!-- 镉黄 -->
+    <color name="cadmium_yellow">#ff9912</color>
+    <color name="dougello">#eb8e55</color>
+    <color name="forum_gold">#ffe384</color>
+    <color name="gold_yellow">#ffd700</color>
+</resources>

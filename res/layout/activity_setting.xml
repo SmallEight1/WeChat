@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <include android:id="@+id/title_la_id"  style="@style/title_style"
+         layout="@layout/activity_title" />
+	<TextView  
+	     style="@style/textView" android:paddingLeft="20dp"
+		 android:text="账号安全"  android:layout_marginTop="20dp"/>	
+	<TextView  
+	      style="@style/textView" android:paddingLeft="20dp"
+		 android:text="新消息通知"  android:layout_marginTop="20dp"/>	
+	<TextView  
+	      style="@style/textView" android:layout_marginTop="1dp"
+		 android:text="隐私"  android:paddingLeft="20dp"/>	
+	<TextView  
+	      style="@style/textView" android:layout_marginTop="1dp"
+		 android:text="通用"  android:paddingLeft="20dp"/>	
+	<TextView  
+	      style="@style/textView" android:paddingLeft="20dp"
+		 android:text="关于微信"  android:layout_marginTop="20dp"/>	
+
+	<Button android:id="@+id/exit_id" android:layout_width="match_parent"
+   		 android:layout_height="wrap_content" android:gravity="center"
+   		 android:text="退出登陆" android:textColor="@color/white" 
+   		 android:layout_marginTop="10dp"  android:background="@drawable/pre_exit_but" 
+   		 android:textSize="20sp" android:layout_marginLeft="10dp"
+   		 android:layout_marginRight="10dp"/>
+</LinearLayout>

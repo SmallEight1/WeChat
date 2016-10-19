@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- （主界面下checkbox组的字体效果）选中时为灰色，未被选中时为黑色 -->
+    <item android:state_checked="false" android:color="@color/black"/>
+    <item android:state_checked="true" android:color="@color/gray"/>
+</selector>

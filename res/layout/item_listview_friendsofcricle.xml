@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" 
+    android:paddingRight="10dp" 
+    android:descendantFocusability="blocksDescendants" android:background="@color/white">
+    
+    <com.wuxianedu.wechat.widget.RoundImageView android:id="@+id/head_id" style="@style/CriImageView"/>
+
+    <TextView android:id="@+id/userName_id" android:textSize="@dimen/text_size"
+        android:text="名字" android:textColor="@color/text_blue"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/head_id" android:layout_toRightOf="@id/head_id"
+        android:layout_marginTop="15dp"/>
+    <TextView android:id="@+id/content_id" android:textSize="14dp"
+        android:text="先天下之幼儿有，后天下之乐儿乐,我之所愿，先天下之幼儿有，后天下之乐儿乐,我之所愿，先天下之幼儿有，后天下之乐儿乐,我之所愿" 
+        android:layout_width="wrap_content" android:ellipsize="end"
+        android:maxLines="3" android:layout_height="wrap_content" 
+        android:layout_alignLeft="@id/userName_id"
+        android:layout_below="@id/userName_id" android:layout_marginTop="10dp"/>
+   
+    <GridLayout android:id="@+id/grid_id" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:columnCount="3"
+        android:layout_below="@id/content_id" android:layout_alignLeft="@id/content_id"
+        android:rowCount="3" android:layout_marginTop="10dp">
+        <ImageView android:id="@+id/img1" style="@style/FriendsImageView"/>
+        <ImageView android:id="@+id/img2" style="@style/FriendsImageView"/>
+        <ImageView android:id="@+id/img3" style="@style/FriendsImageView"/>
+        <ImageView android:id="@+id/img4" style="@style/FriendsImageView"/>
+        <ImageView android:id="@+id/img5" style="@style/FriendsImageView"/>
+        <ImageView android:id="@+id/img6" style="@style/FriendsImageView"/>
+        <ImageView android:id="@+id/img7" style="@style/FriendsImageView"/>
+        <ImageView android:id="@+id/img8" style="@style/FriendsImageView"/>
+        <ImageView android:id="@+id/img9" style="@style/FriendsImageView"/>
+    </GridLayout>
+    
+    <TextView android:id="@+id/time_id" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textSize="13dp"
+        android:text="time" android:layout_below="@id/grid_id"
+        android:layout_marginTop="10dp" android:layout_alignLeft="@id/content_id"/>
+    
+    <ImageView android:id="@+id/afr_id" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/time_id" android:src="@drawable/afr"
+        android:paddingBottom="10dp"/>
+</RelativeLayout>

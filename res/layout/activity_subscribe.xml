@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+  	<include android:id="@+id/title_la_id" style="@style/title_style"
+        layout="@layout/activity_title"/>
+
+  	<ListView android:id="@+id/sub_listView_id" android:layout_width="match_parent"
+  	    android:layout_height="match_parent" android:layout_below="@id/title_la_id"></ListView>
+</RelativeLayout>

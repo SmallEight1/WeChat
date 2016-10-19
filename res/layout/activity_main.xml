@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:background="@color/backgound">
+
+    <include android:id="@+id/title_la_id" style="@style/title_style"
+        layout="@layout/activity_title"  />
+	<RadioGroup android:id="@+id/radioGroud_id" android:layout_width="match_parent"
+	    android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+	    android:orientation="horizontal"  android:layout_marginTop="1dp"  
+	    android:padding="5dp"
+	    android:background="@color/white">
+	    <RadioButton android:id="@+id/bt1_id"  style="@style/radiobutton" 
+	        android:text="微信"  android:drawableTop="@drawable/sel_weixin"
+	         android:checked="true"/>
+	    <RadioButton android:id="@+id/bt2_id" style="@style/radiobutton" 
+	        android:text="通讯录"  android:drawableTop="@drawable/sel_contact"/>
+	    <RadioButton android:id="@+id/bt3_id" style="@style/radiobutton"
+	         android:text="发现"  android:drawableTop="@drawable/sel_find"/>
+	    <RadioButton android:id="@+id/bt4_id" style="@style/radiobutton"
+			 android:text="我的" android:drawableTop="@drawable/sel_profile"
+			 />
+	</RadioGroup>    
+	
+	<android.support.v4.view.ViewPager 
+	    android:layout_width="match_parent" android:id="@+id/vp_id"
+	    android:layout_height="wrap_content" android:layout_below="@id/title_la_id"
+	    android:layout_above="@id/radioGroud_id"></android.support.v4.view.ViewPager>
+	
+<!-- 	<View android:id="@+id/line_id" android:layout_width="match_parent"
+	    android:layout_height="wrap_content" android:background="@drawable/line_shape"
+	    android:layout_alignTop="@id/radioGroud_id"/> -->
+</RelativeLayout>

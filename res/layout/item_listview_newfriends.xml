@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout android:id="@+id/groudChat_ly_id" style="@style/con_LinearLayout"
+        android:layout_marginTop="0dp">
+		<com.wuxianedu.wechat.widget.RoundImageView  android:id="@+id/phto_id" android:src="@drawable/icon_qunliao"
+			style="@style/con_Linear_Img"/>
+		<TextView android:id="@+id/name_id" style="@style/con_Linear_text" 
+		    android:text="群聊" />
+		<LinearLayout android:id="@id/ly_id" android:layout_width="match_parent" 
+		    android:layout_height="match_parent" android:gravity="right">
+			<Button android:id="@+id/isAdd_id" android:layout_width="55dp"
+			    android:layout_height="30dp" android:background="@drawable/accept_shap_nor"
+			    android:text="接受" android:textColor="@color/white"
+			    android:layout_marginRight="10dp" android:gravity="center"
+			    android:layout_gravity="right|center_vertical" />
+		</LinearLayout>
+	 </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:background="@color/backgound"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/title_la_id" style="@style/title_style"
+        layout="@layout/activity_title"  />
+
+    <TextView  android:id="@+id/news_friends" android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_hegiht" android:text="添加朋友"
+        android:textColor="@color/white" android:gravity="center_vertical"
+        android:layout_alignParentRight="true" android:background="@drawable/pre_back_img"
+        android:layout_marginRight="10dp" android:textSize="@dimen/con_Text_size"/>
+
+     
+     <ListView android:id="@+id/newsFriends_listView" 
+         android:layout_width="match_parent" 
+         android:layout_height="match_parent" android:layout_below="@id/title_la_id">
+         
+     </ListView>
+</RelativeLayout>

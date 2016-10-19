@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_id"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/backgound">
+
+   <include android:id="@+id/title_la_id"  style="@style/title_style"
+         layout="@layout/activity_title" />
+
+   <RelativeLayout android:id="@+id/allrly_id" android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"  android:layout_alignParentBottom="true"
+   	    android:orientation="vertical">
+   	     <!-- 白色的框 -->
+		<RelativeLayout android:id="@+id/rly_id" android:layout_width="match_parent"
+		    android:layout_height="wrap_content" android:background="@color/white"
+		  	android:gravity="center_vertical" >
+  			<!-- 右边 -->
+		  	 <RelativeLayout android:id="@+id/right_rly_id" android:layout_width="wrap_content" android:layout_height="wrap_content"
+		  	     android:layout_alignParentRight="true" android:layout_margin="15dp" >
+			    <TextView android:id="@+id/jiahao_id" android:layout_width="wrap_content"
+			       android:layout_height="wrap_content"  android:background="@drawable/pre_chat_jiahao_but"
+			        />
+			    <!-- 发送按钮 -->
+			    <TextView android:id="@+id/send_tv_id" android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"  android:text="发送"
+			        android:textColor="@color/white"   android:background="@drawable/pre_login_but" 
+			        android:gravity="center"  android:padding="5dp" android:visibility="gone"
+			       />
+		    </RelativeLayout>
+		    <!-- 左边-->
+			<RelativeLayout android:id="@+id/left_rly_id" android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+			    android:layout_margin="15dp">
+			   <TextView android:id="@+id/voice_id" android:layout_width="wrap_content"
+			       android:layout_height="wrap_content" android:background="@drawable/pre_chat_voice_img"/>
+			  	<!-- 键盘 按钮 -->
+			   <TextView android:id="@+id/key_id" android:layout_width="wrap_content"
+			       android:layout_height="wrap_content" android:background="@drawable/pre_chat_key"
+			       android:visibility="gone"/>"
+		   </RelativeLayout>
+		   
+			<RelativeLayout  android:id="@+id/center_id" android:layout_width="match_parent"
+			    android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_rly_id"
+			    android:layout_toRightOf="@id/left_rly_id"  android:layout_alignBottom="@id/left_rly_id"
+			    android:gravity="bottom">
+			   <!-- 输入框 -->
+		
+			 <EditText android:id="@+id/send_et_id" android:layout_width="match_parent"
+			        android:layout_height="match_parent"  android:background="@drawable/fou_editview" 
+			         android:paddingRight="30dp" android:textSize="@dimen/text_size"
+			        android:gravity="bottom"/>
+			
+			   <!-- 右边表情 -->
+			   <TextView android:id="@+id/biaoqing_id" android:layout_width="wrap_content"
+			       android:layout_height="wrap_content" android:layout_alignRight="@id/send_et_id"
+			       android:background="@drawable/pre_chat_biaoq" android:layout_alignBottom="@id/send_et_id"
+			       android:layout_marginRight="5dp" android:layout_marginBottom="5dp"  />
+			   <!-- 右边的键盘 -->
+			   <TextView android:id="@+id/key_right_id" android:layout_width="wrap_content"
+			       android:layout_height="wrap_content" android:layout_alignRight="@id/send_et_id"
+			       android:background="@drawable/pre_chat_key_right" android:layout_alignBottom="@id/send_et_id"
+			       android:layout_marginRight="5dp" android:layout_marginBottom="5dp"
+			       android:visibility="gone"/>			   
+			   <!-- 按住说话 -->
+			   <TextView android:id="@+id/talk_id" android:layout_width="match_parent" 
+			       android:layout_height="30dp"  android:text="按住说话"
+			       android:gravity="center" android:textColor="@color/black"
+			       android:background="@drawable/pre_chat_talk" 
+			       android:visibility="gone" android:clickable="true"/>
+		   </RelativeLayout>
+	   </RelativeLayout>   	    
+	   
+   		<!-- 图片，拍照，位置，文件，语言童话，视频通话 -->
+	   <LinearLayout android:id="@+id/tool_id" android:layout_width="match_parent"
+		   android:layout_height="210dp" android:background="@color/backgound"
+		   android:orientation="vertical" android:layout_below="@+id/rly_id"
+		   android:visibility="gone">
+		   <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" >
+			   <LinearLayout style="@style/tool_ly">
+				   <ImageView  android:id="@+id/photo_id"  android:src="@drawable/chat_tool_photo" style="@style/tool_ly_img"/>
+				   <TextView  style="@style/tool_ly_tv" android:text="图片"  />
+			   </LinearLayout>
+			   
+			   <LinearLayout  style="@style/tool_ly" >
+				  <ImageView  android:id="@+id/camera_id"  android:src="@drawable/chat_tool_camera" style="@style/tool_ly_img"/>
+				  <TextView  style="@style/tool_ly_tv" android:text="拍照"  />
+			  </LinearLayout>
+			  
+			  <LinearLayout  style="@style/tool_ly">
+				 <ImageView  android:id="@+id/location_id"  android:src="@drawable/chat_tool_location" style="@style/tool_ly_img"/>
+				 <TextView  style="@style/tool_ly_tv" android:text="位置"  />
+			   </LinearLayout>
+	    </LinearLayout>
+		 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" >
+		 <LinearLayout  style="@style/tool_ly">
+				 <ImageView  android:id="@+id/send_file_id"  android:src="@drawable/chat_tool_send_file" style="@style/tool_ly_img"/>
+				 <TextView  style="@style/tool_ly_tv" android:text="文件"  />
+			   </LinearLayout>
+		 <LinearLayout  style="@style/tool_ly">
+				 <ImageView  android:id="@+id/audio_id"  android:src="@drawable/chat_tool_audio" style="@style/tool_ly_img"/>
+				 <TextView  style="@style/tool_ly_tv" android:text="语言通话"  />
+			   </LinearLayout>
+		 <LinearLayout  style="@style/tool_ly">
+				 <ImageView  android:id="@+id/video_id"  android:src="@drawable/chat_tool_video" style="@style/tool_ly_img"/>
+				 <TextView  style="@style/tool_ly_tv" android:text="视频通话"  />
+			   </LinearLayout>	   	   	    
+		 </LinearLayout>
+	</LinearLayout>
+ 
+	<GridView android:id="@+id/biaoq_gv_id" android:layout_width="match_parent"
+	     android:layout_height="210dp" android:background="@color/backgound"
+	     android:layout_below="@+id/rly_id" android:numColumns="7"
+	      android:visibility="gone"
+	     ></GridView>  
+   </RelativeLayout>
+   <!-- 下拉列表   位于整体框的下方的下方-->
+   <ListView android:id="@+id/chat_lv_id" android:layout_width="match_parent"
+       android:layout_height="match_parent" android:layout_below="@id/title_la_id"
+       android:layout_above="@+id/allrly_id" android:divider="@null">  
+   </ListView >
+   
+	<RelativeLayout android:id="@+id/voice_bg" android:layout_width="120dp"
+	    android:layout_height="120dp" android:background="@drawable/d_voice_hint_bg"
+	    android:layout_centerInParent="true" android:visibility="gone">
+	
+	    <ImageView android:id="@+id/chat_voice_mic" android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" android:src="@anim/video_frame"
+	        android:layout_centerHorizontal="true" android:layout_marginTop="10dp"/>
+	   
+	    <TextView android:id="@+id/chat_voice_hint" android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+	        android:textColor="@color/white" android:text="上下滑动，取消发送"
+	        android:layout_below="@id/chat_voice_mic" android:textSize="10sp"
+	        android:layout_marginTop="10dp" />
+	</RelativeLayout> 
+</RelativeLayout>

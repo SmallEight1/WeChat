@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"  android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/backgound"
+    >
+    
+	<ListView android:id="@+id/contact_lv" android:layout_width="match_parent"
+	    android:layout_height="match_parent" android:divider="@null"/>
+	
+	<com.wuxianedu.wechat.widget.SideBar android:id="@+id/sideBar_id" android:layout_width="30dp"
+	    android:layout_height="match_parent" android:layout_marginTop="65dp"
+	    android:layout_alignParentRight="true" android:layout_marginBottom="10dp"/>
+	
+	<TextView android:id="@+id/char_id" android:layout_centerInParent="true"
+	    android:text="j" android:textSize="30sp" android:background="@drawable/shape_hint_char"
+	    android:textColor="@color/white" android:layout_width="70dp"
+	    android:layout_height="70dp" android:gravity="center"
+	    android:visibility="gone"/>
+</RelativeLayout>

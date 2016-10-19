@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/backgound">
+
+    <include android:id="@+id/title_la_id"  style="@style/title_style"
+         layout="@layout/activity_title" />
+    
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_below="@+id/title_la_id" android:padding="10dp">
+   		 <TextView android:id="@+id/country" 
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="国家和地区" android:textColor="@color/black"
+       	 	android:textSize="20sp"  android:paddingTop="10dp"
+       	 	android:paddingLeft="10dp"/>
+   		 
+   		 <!-- 第一行-->
+   		 <View android:id="@+id/line_id" 
+   		     android:layout_width="match_parent" android:layout_height="0.5dp"
+   		     android:background="@color/line" android:layout_below="@id/country"
+   		    android:layout_marginTop="5dp"/>
+   		 
+   		 <TextView
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="中国" android:textColor="@color/green"
+       	 	android:textSize="20sp" android:layout_alignParentRight="true" 
+       	 	android:padding="10dp"/>
+   		 
+   		 <ImageView android:layout_alignRight="@id/line_id"
+   		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+   		    android:src="@drawable/spinner" android:layout_alignBottom="@id/line_id"/>
+   		 
+   		  <!-- 第二行-->
+   		 <com.wuxianedu.wechat.widget.LoginEditText  android:id="@+id/phone_id" 
+   		    android:maxLength="11" style="@style/edit_log_reg"
+   		    android:hint="你的手机号" android:layout_below="@id/line_id" 
+   		    android:phoneNumber="true"
+   		      />
+   		 
+   		 <TextView
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="+86" android:textColor="@color/black"
+       	 	android:textSize="20sp"  android:layout_below="@id/line_id"
+       	 	android:layout_marginTop="20dp" android:paddingLeft="40dp"/>
+   		 
+   		  <!-- 第三行-->
+   		 <com.wuxianedu.wechat.widget.LoginEditText  android:id="@+id/password_id" 
+   		     android:hint="密码" android:layout_below="@id/phone_id" 
+   		     android:password="true" style="@style/edit_log_reg"
+   		     android:maxLength="10" 
+   		     />
+   		 
+   		 <TextView
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="密码" android:textColor="@color/black"
+       	 	android:textSize="20sp"  android:layout_below="@id/phone_id"
+       	 	android:layout_marginTop="20dp" android:paddingLeft="40dp"/>
+   		 
+   		  <!-- 第四行-->
+   		 <Button android:id="@+id/client_id" android:layout_width="match_parent"
+   		     android:layout_height="wrap_content" android:gravity="center"
+   		     android:text="登陆" android:textColor="@color/white" 
+   		     android:layout_below="@+id/password_id" android:layout_marginTop="10dp"
+   		     android:background="@drawable/pre_login_but" android:textSize="20sp"/>
+   		 
+   		 <TextView
+   		    android:id="@+id/problem_id"
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="登陆遇到的问题" android:layout_alignParentRight="true"
+       	 	android:textSize="15sp"  android:layout_below="@id/client_id"
+       	 	android:layout_marginTop="15dp" android:textColor="@color/blue"/>
+   		 
+   		 <Button android:id="@+id/res_id" android:layout_width="wrap_content"
+   		     android:layout_height="wrap_content" android:text="注册"
+   		     android:textColor="@color/black" android:layout_centerHorizontal="true"
+   		     android:layout_alignParentBottom="true" android:layout_marginBottom="20dp"
+   		     android:background="@drawable/pre_res_but"/>
+   		 
+	</RelativeLayout>
+</RelativeLayout>

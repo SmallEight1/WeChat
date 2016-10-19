@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"  android:layout_height="wrap_content" 
+    android:background="@drawable/popmenu_bg" android:layout_gravity="right"
+    android:orientation="vertical">
+
+   	<TextView android:id="@+id/chat_id" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="发起群聊"
+       	android:drawableLeft="@drawable/icon_menu_group" style="@style/WeiXin_popuWindow_text" />
+   <View android:id="@+id/line1_id" android:layout_height="@dimen/line_heghit"
+       android:layout_width="match_parent" android:background="@color/pop_line" />
+    <TextView android:id="@+id/addfriend_id" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="添加好友"
+        android:drawableLeft="@drawable/icon_menu_addfriend" style="@style/WeiXin_popuWindow_text"
+        />
+     <View android:id="@+id/line2_id" android:layout_height="@dimen/line_heghit"
+       android:layout_width="match_parent" android:background="@color/pop_line" />
+    <TextView android:id="@+id/sao_id" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="扫一扫"
+        android:drawableLeft="@drawable/icon_menu_sao" style="@style/WeiXin_popuWindow_text"
+      />
+     <View android:id="@+id/line3_id" android:layout_height="@dimen/line_heghit"
+       android:layout_width="match_parent" android:background="@color/pop_line" />
+    <TextView android:id="@+id/abv_id" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="微信支付"
+        android:drawableLeft="@drawable/abv" style="@style/WeiXin_popuWindow_text"
+         />
+
+</LinearLayout>

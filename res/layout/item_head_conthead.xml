@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <com.wuxianedu.wechat.widget.SearchEditText android:id="@+id/con_sea_img_id" 
+        style="@style/searchView" />
+    
+    <LinearLayout android:id="@+id/ly_head_id" android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+	    <LinearLayout android:id="@+id/newsFriend_ly_id" style="@style/con_LinearLayout">
+			<ImageView android:id="@+id/newsFriend_im_id" style="@style/con_Linear_Img"
+			     android:src="@drawable/icon_addfriend"/>	
+			<TextView android:id="@+id/newFriend_id" style="@style/con_Linear_text" 
+			     android:text="新的朋友" />
+	    </LinearLayout>
+		
+		<LinearLayout android:id="@+id/groudChat_ly_id" style="@style/con_LinearLayout">
+			<ImageView android:id="@+id/groudChat_im_id" android:src="@drawable/icon_qunliao"
+				style="@style/con_Linear_Img"/>
+			<TextView android:id="@+id/groudChat_id" style="@style/con_Linear_text" 
+			    android:text="群聊" />
+		 </LinearLayout>
+	
+		<LinearLayout android:id="@+id/official_ly_id" style="@style/con_LinearLayout">
+		    
+			<ImageView android:id="@+id/official_im_id" style="@style/con_Linear_Img"
+			    android:src="@drawable/icon_public"/>
+			
+			<TextView android:id="@+id/official_id" style="@style/con_Linear_text"
+		     	android:text="公众号" />
+		 </LinearLayout>
+	</LinearLayout>
+</LinearLayout>

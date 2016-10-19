@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+ 
+     <com.wuxianedu.wechat.widget.SearchEditText android:id="@+id/con_sea_img_id" style="@style/searchView"
+        android:layout_below="@+id/title_la_id" />
+
+     <LinearLayout android:id="@+id/ly_id" style="@style/LinearLayout" 
+         android:layout_below="@id/con_sea_img_id" android:layout_marginTop="0dp"
+         android:orientation="horizontal">
+         <TextView android:id="@+id/new_phone" android:layout_height="wrap_content"
+             android:layout_width="0dp" android:text="添加手机联系人"
+             android:layout_weight="1" android:gravity="center_horizontal"
+             android:paddingBottom="10dp" android:drawableTop="@drawable/a6_"
+             android:textSize="@dimen/con_Text_size" android:drawablePadding="10dp"
+             android:paddingTop="20dp" android:background="@drawable/pre_style"/>
+         <View android:id="@+id/line_id" android:background="@color/backgound"
+             android:layout_width="1dp" android:layout_height="match_parent"/>
+         <TextView android:id="@+id/new_qq" android:layout_height="wrap_content"
+             android:layout_width="0dp" android:text="添加QQ好友"
+             android:layout_weight="1" android:gravity="center_horizontal"
+             android:paddingBottom="10dp" android:drawableTop="@drawable/a6a"
+             android:textSize="@dimen/con_Text_size" android:drawablePadding="10dp"
+             android:paddingTop="20dp" android:background="@drawable/pre_style"/>
+     </LinearLayout>
+     
+     <TextView android:id="@+id/tv_id" android:layout_width="wrap_content"
+         android:layout_height="wrap_content" android:textSize="10sp" 
+         android:layout_below="@id/ly_id" android:text="新的朋友"
+         android:paddingTop="5dp" android:paddingBottom="5dp"
+         android:paddingLeft="20dp"/>
+</RelativeLayout>

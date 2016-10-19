@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+ 	<include android:id="@+id/title_la_id"
+        layout="@layout/activity_title" android:layout_width="match_parent" 
+        android:layout_height="60dp" />
+ 	
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_below="@+id/title_la_id" android:padding="10dp">
+   		 <TextView
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="国家和地区" android:textColor="@color/black"
+       	 	android:textSize="20sp"  android:id="@+id/country" android:paddingTop="10dp"
+       	 	android:paddingLeft="10dp"/>
+   		 
+   		 <View android:id="@+id/line_id" 
+   		     android:layout_width="match_parent" android:layout_height="0.5dp"
+   		     android:background="@color/line" android:layout_below="@id/country"
+   		    android:layout_marginTop="5dp"/>
+   		 
+   		 <TextView
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="中国" android:textColor="@color/green"
+       	 	android:textSize="20sp" android:layout_alignParentRight="true" 
+       	 	android:padding="10dp"/>
+   		 
+   		 <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+   		    android:src="@drawable/spinner" android:layout_alignBottom="@id/line_id"
+   		    android:layout_alignRight="@id/line_id"/>
+   		 
+   		 
+   		 <com.wuxianedu.wechat.widget.LoginEditText  android:id="@+id/phone_id" 
+   		     android:hint="你的手机号" android:layout_below="@id/line_id" 
+   		    android:phoneNumber="true" style="@style/edit_log_reg"
+   		     android:maxLength="11" />
+   		 
+   		 <TextView
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="+86" android:textColor="@color/black"
+       	 	android:textSize="20sp"  android:layout_below="@id/line_id"
+       	 	android:layout_marginTop="20dp" android:paddingLeft="40dp"/>
+   		 
+   		 <EditText  android:id="@+id/vef_id" android:layout_width="match_parent"
+   		     android:layout_height="wrap_content" android:background="@drawable/fou_editview"
+   		     android:hint="请输入验证码" android:layout_below="@id/phone_id" 
+   		     android:layout_marginTop="20dp" android:paddingLeft="100dp"
+   		     android:singleLine="true" android:phoneNumber="true"
+   		     android:maxLength="10" android:drawableRight="@drawable/pre_sea_close"/>
+   		 
+   		 <TextView
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="验证码" android:textColor="@color/black"
+       	 	android:textSize="20sp"  android:layout_below="@id/phone_id"
+       	 	android:layout_marginTop="20dp" android:paddingLeft="20dp"/>
+   		 
+   		 <Button android:id="@+id/vef_bt_id" android:layout_width="wrap_content"
+   		     android:layout_height="30dp" android:gravity="center"
+   		     android:text="发送验证码" android:textColor="@color/white" 
+   		     android:padding="5dp" android:layout_marginBottom="5dp"
+   		   	 android:layout_alignBottom="@id/vef_id" android:layout_alignParentRight="true"
+   		     android:background="@drawable/pre_login_but" android:textSize="15sp"/>
+   		 	 
+   		 <com.wuxianedu.wechat.widget.LoginEditText  android:id="@+id/password_id" 
+   		     android:hint="填写密码" android:layout_below="@id/vef_id" 
+   		     android:password="true" style="@style/edit_log_reg"
+   		     android:maxLength="10" />
+   		 
+   		 <TextView
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="密码" android:textColor="@color/black"
+       	 	android:textSize="20sp"  android:layout_below="@id/vef_id"
+       	 	android:layout_marginTop="20dp" android:paddingLeft="40dp"/>
+   		 
+   		 <Button android:id="@+id/reg_id" android:layout_width="match_parent"
+   		     android:layout_height="wrap_content" android:gravity="center"
+   		     android:text="注册" android:textColor="@color/white" 
+   		     android:layout_below="@+id/password_id" android:layout_marginTop="10dp"
+   		     android:background="@drawable/pre_login_but" android:textSize="20sp"/>
+   		 
+   		
+   		 
+	</RelativeLayout>
+</RelativeLayout>

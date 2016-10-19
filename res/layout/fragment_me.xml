@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/backgound" >
+  
+	<LinearLayout
+	    android:id="@+id/ly3_id"  style="@style/LinearLayout"
+	    android:layout_height="@dimen/lin_heghit"  android:orientation="horizontal" 
+	    android:background="@drawable/pre_style" android:clickable="true"
+	    android:layout_marginTop="@dimen/lin_mag" android:gravity="center_vertical">
+	    <com.wuxianedu.wechat.widget.RoundImageView
+	        android:id="@+id/head_id" style="@style/CriImageView"/>
+	    
+		<LinearLayout
+	    	android:id="@+id/ly4_id"  android:layout_width="wrap_content"
+	    	android:layout_height="match_parent"  android:orientation="vertical" >
+	   			 <TextView android:id="@+id/name_id"  style="@style/Me_LinearText"
+	       		 	 android:drawableRight="@drawable/ic_sex_female" android:paddingTop="@dimen/lin_Text_padding"/>
+	   			 <TextView android:id="@+id/weixinId_id" style="@style/Me_LinearText"
+	       		 	 android:text="微信号："  android:paddingBottom="@dimen/lin_Text_padding" />
+	   	</LinearLayout>	
+	   	
+		<LinearLayout android:layout_weight="1"
+		   android:id="@+id/ly5_id"  android:layout_width="wrap_content"
+		   android:layout_height="match_parent" android:gravity="right|center_vertical">
+		    	<ImageView android:layout_width="20dp" android:layout_height="20dp"
+		      		  android:src="@drawable/right" />
+		</LinearLayout>	
+	</LinearLayout>
+	
+	<TextView
+        android:id="@+id/photo_id"  style="@style/textView"
+        android:drawableLeft="@drawable/icon_me_photo" android:text="相册" />
+
+    <TextView
+        android:id="@+id/collect_id"  style="@style/textView"
+        android:drawableLeft="@drawable/icon_me_collect"
+        android:text="收藏" android:layout_marginTop="@dimen/line_heghit"/>
+
+    <TextView
+        android:id="@+id/wallet_id" style="@style/textView"
+        android:drawableLeft="@drawable/icon_me_money"
+        android:text="钱包" android:layout_marginTop="@dimen/line_heghit"/>
+
+    <TextView
+        android:id="@+id/carBag_id"  style="@style/textView"
+        android:drawableLeft="@drawable/icon_me_card"
+        android:text="卡包" android:layout_marginTop="@dimen/line_heghit"/>
+
+    <TextView
+        android:id="@+id/face_id"  style="@style/textView"
+        android:drawableLeft="@drawable/icon_me_smail" android:text="表情" />
+
+    <TextView
+        android:id="@+id/setting_id"  style="@style/textView"
+        android:drawableLeft="@drawable/icon_me_setting" android:text="设置" />
+    
+</LinearLayout>

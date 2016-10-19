@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"  android:layout_height="match_parent"
+   	android:background="@color/black_title">
+
+    <!-- 左边图片 -->
+    <ImageView android:id="@+id/back_id" android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:src="@drawable/left"
+        android:paddingLeft="20dp" android:paddingTop="10dp" 
+        android:paddingBottom="10dp" android:paddingRight="20dp"
+        android:background="@drawable/pre_back_img"/>
+	<!-- 标题 -->
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="wrap_content"  android:layout_height="wrap_content"
+        android:text="登陆"  android:textColor="@color/white" 
+        android:textSize="@dimen/title_text_size" android:layout_centerInParent="true"/>
+
+    <!-- 右边图片 -->
+     <ImageView android:id="@+id/right_id" android:layout_width="60dp"
+        android:layout_height="match_parent" android:src="@drawable/icon_add"
+        android:padding="15dp" android:scaleType="centerCrop"
+        android:layout_alignParentRight="true" 
+        android:background="@drawable/pre_back_img" android:visibility="gone"/>
+    
+</RelativeLayout>

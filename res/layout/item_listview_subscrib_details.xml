@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"  android:layout_height="match_parent"
+     android:background="@color/backgound" >
+    <!-- 25 -->
+    <TextView android:id="@+id/time" style="@style/time_tv"/>
+
+    <RelativeLayout android:id="@+id/rly_id" android:layout_width="match_parent"
+        android:background="@color/white" android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+        android:layout_below="@id/time" android:layout_marginBottom="45dp">
+        <!-- 40 /45-->
+        <TextView android:id="@+id/name_id" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="红楼梦"
+            android:textColor="@color/black" android:textSize="@dimen/text_size"
+            android:layout_marginLeft="20dp" android:layout_marginTop="18dp"/>
+        <!-- 20 -->
+        <TextView android:id="@+id/data_id" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="@dimen/lin_Text_size"
+            android:text="08月17日" android:layout_alignLeft="@id/name_id"
+            android:layout_below="@id/name_id" android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+        <!-- 405(高)/585（宽） -->
+        <ImageView android:id="@+id/photo_id" android:layout_width="match_parent"
+            android:layout_height="200dp" android:src="@drawable/image_nor"
+            android:layout_alignLeft="@id/name_id" android:layout_marginRight="20dp"
+            android:layout_below="@id/data_id" android:scaleType="centerCrop"/>  
+     	 <!-- 20 /10-->
+        <TextView android:id="@+id/content_id" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="天将降大任于斯人也，必先苦其心志，劳其筋骨，二期特服"
+            android:layout_below="@id/photo_id" android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" android:layout_alignLeft="@id/photo_id"
+            android:maxLines="1" android:ellipsize="end"
+           android:layout_alignRight="@id/photo_id"/>
+         
+        <View android:id="@+id/line_id" android:layout_width="match_parent"
+            android:layout_height="1dp" android:layout_below="@id/content_id"
+            android:layout_alignLeft="@id/content_id" android:layout_alignRight="@id/content_id"
+            android:background="@color/line"/>
+        <!-- 70 70-->
+        <TextView android:id="@+id/all_id" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="18dp"
+            android:textSize="16dp" android:textColor="@color/black"
+            android:text="阅读全文" android:layout_below="@id/line_id"
+            android:layout_marginLeft="18dp" android:layout_marginRight="27dp"
+            android:drawableRight="@drawable/right" android:paddingBottom="18dp"/>
+    </RelativeLayout>
+</RelativeLayout>

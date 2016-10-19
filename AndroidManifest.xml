@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wuxianedu.wechat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+     <!-- 文件的读写，网络请求，照相机 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+     
+     
+     <uses-permission android:name="android.permission.GET_ACCOUNTS" />  
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />  
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />  
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />  
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
+    <uses-permission android:name="android.permission.INTERNET" />  
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />  
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />  
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />  
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
+    <!-- android:name=".bean.MyApplication"  被重写的 -->
+    <application
+        android:name=".bean.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="微信"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:label="微信" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.CriOfFriendsActivity" />
+        <activity android:name=".activity.ImageBrowseActivity" />
+        <activity android:name=".activity.NewsFriendActivity" />
+        <activity android:name=".activity.FriedDetailsActivity" />
+        <activity
+            android:name=".activity.GounpChatActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.SubscribeActivity" />
+        <activity android:name=".activity.SubscribDetailsActivity" />
+        <activity android:name=".activity.ChatActivity" />	
+        <activity android:name=".activity.MapLocationActivity"/>
+    
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="9ILhM4G55qtjqH7q2liaoc3ZLWCscaQo" />
+        
+      
+    </application>
+   
+</manifest>

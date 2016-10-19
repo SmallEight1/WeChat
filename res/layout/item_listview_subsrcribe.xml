@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+     <com.wuxianedu.wechat.widget.RoundImageView android:id="@+id/phto_id"
+          style="@style/CriImageView"    
+      />
+     
+     <TextView android:id="@+id/messageNum_id" android:layout_width="wrap_content"
+         android:layout_height="wrap_content" android:background="@drawable/aii"
+         android:layout_alignRight="@+id/phto_id" android:textColor="@color/white"
+         android:text="1" android:textSize="13dp" android:gravity="center"
+         android:visibility="gone" android:paddingLeft="2.5dp" android:paddingRight="2.5dp"
+          android:layout_alignTop="@+id/phto_id"/>
+    
+    <TextView android:id="@+id/name_id" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textSize="@dimen/text_size"
+        android:layout_marginTop="10dp" android:textColor="@color/black"
+        android:text="姓名" android:layout_toRightOf="@id/phto_id" 
+        />
+    
+    <TextView android:id="@+id/message_id" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_toRightOf="@id/phto_id"
+        android:text="信息" android:layout_below="@id/name_id" android:paddingTop="6dp"
+        android:textSize="13dp"/> 
+        
+    <TextView android:id="@+id/time_id" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  android:text="时间"  
+        android:textSize="13dp" android:layout_alignTop="@id/name_id"
+        android:layout_alignParentRight="true" android:layout_marginRight="10dp"/> 
+
+</RelativeLayout>

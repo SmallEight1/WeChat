@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题字体大小 -->
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="title_hegiht">50dp</dimen>
+    
+    <!-- 线性布局之间间隔 -->
+    <dimen name="spanbew">20dp</dimen>
+    
+    <!-- 字体大小，和边框的距离,和左侧图标的距离-->
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_padding">13dp</dimen>
+    <dimen name="text_draw_pad">10dp</dimen>
+    
+    <!-- 圆形图片大小  -->
+    <dimen name="img_size">55dp</dimen>
+    
+    <!-- 朋友圈背景图片的高 -->
+    <dimen name ="fre_bk_img_height">220dp</dimen>
+    
+    <!-- 朋友圈动态图片的宽，高，间距 -->
+    <dimen name="fre_img_width">95dp</dimen>
+    <dimen name="fre_imag_height">70dp</dimen>
+    <dimen name="fre_imag_padding">3dp</dimen>
+    
+    <!-- popuwindow中的间隔 (上下左)，和右间隔,和字体大小-->
+    <dimen name="popuWindow_padding">10dp</dimen>
+    <dimen name="popuWindow_pad_rig">50dp</dimen>
+    <dimen name="popuWindow_tex_size">15sp</dimen>
+    
+    <!--我的里面第一个LinearLayout距离顶部的高度 和本身的高度-->
+    <dimen name="lin_mag">10dp</dimen>
+    <dimen name="lin_heghit">80dp</dimen>
+    
+    <!-- 我的里面第一个Linear中两个文本距边框的距离 和他们的字体大小-->
+    <dimen name="lin_Text_padding">20dp</dimen>
+    <dimen name="lin_Text_size">14sp</dimen>
+     
+     <!-- 用背景做线的大小 -->
+    <dimen name ="line_heghit">1dp</dimen>
+    
+    <!-- 通讯录中的字体大小 -->
+	 <dimen name="con_Text_size">14sp</dimen>
+</resources>

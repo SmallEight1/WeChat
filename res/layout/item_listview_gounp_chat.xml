@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView android:id="@+id/contact_lable" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="#"
+        android:padding="5dp"/>
+ 
+  	<LinearLayout android:id="@+id/newsFriend_ly_id" style="@style/con_LinearLayout"
+   	    android:layout_below="@id/contact_lable" android:layout_marginTop="1dp">
+ 	 	<CheckBox android:id="@+id/ck_id" android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content" android:button="@null"
+   	        android:background="@drawable/ck_chekbox" android:clickable="false"
+   	        android:focusable="false" android:layout_gravity="center_vertical"
+   	        android:layout_marginLeft="10dp"/> 
+   	        
+		<com.wuxianedu.wechat.widget.RoundImageView android:id="@+id/contact_head" 
+		    style="@style/con_Linear_Img" android:src="@drawable/ic_launcher"
+		    android:layout_marginLeft="10dp"/>	
+		<TextView android:id="@+id/contact_content" style="@style/con_Linear_text" 
+		     android:text="新的朋友" />
+    </LinearLayout> 
+
+</RelativeLayout>
